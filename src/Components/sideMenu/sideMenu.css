@@ -1,0 +1,49 @@
+.sideMenu{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 3rem;
+    width: 24rem;
+    background-image: url(../../../public/assets/images/bg-sidebar-desktop.svg);
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0dvb;
+    border-radius: .6rem;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.stepTag{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 70%;
+    height: 5vh;
+    text-transform: uppercase;
+}
+
+.stepNumber{
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(206, 94%, 87%);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.stepName{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 700;
+}
+
+.stepName span{
+    font-weight: 400;
+    color: hsl(231, 11%, 63%);
+}

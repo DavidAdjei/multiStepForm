@@ -1,0 +1,9 @@
+.App{
+  display: flex;
+  width: 70rem;
+  min-height: 65vh;
+  padding: 1.5rem;
+  gap: 4rem;
+  background-color: white;
+  border-radius: .6rem;
+}
