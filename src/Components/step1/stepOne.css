@@ -6,10 +6,10 @@
     padding-top: 3rem;
 }
 
-.stepOneInfo{
+.info{
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .heading{
@@ -65,7 +65,7 @@
     justify-content: space-between;
 }
 
-.stepOneButton{
+.nextButton{
     display: flex;
     width: 7rem;
     padding: .8rem;
@@ -79,6 +79,7 @@
     justify-self: flex-end;
     margin-top: 5rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .stepOneButton:focus{

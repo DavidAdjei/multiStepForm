@@ -1,23 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './stepOne.css';
 import FormField from './formField';
 import { useNavigate } from 'react-router';
 
-export default function StepOne() {
-  const [formData, setFormData] = useState({
-    displayName: '',
-    email: '',
-    phoneNumber: '',
-    errors: {
-      displayName: '',
-      email: '',
-      phoneNumber: '',
-    },
-  });
-
+export default function StepOne({ formData, setFormData }) {
   const navigate = useNavigate();
 
-  const validateForm = () => {
+const validateForm = () => {
     const { displayName, email, phoneNumber } = formData;
     let errors = {};
     let isValid = true;
@@ -64,7 +53,7 @@ export default function StepOne() {
 
   return (
     <div className='stepOne'>
-      <div className='stepOneInfo'>
+      <div className='info'>
         <h1 className='heading'>Personal info</h1>
         <p className='instructions'>
           Please provide your name, email address, and phone number.
@@ -101,7 +90,7 @@ export default function StepOne() {
           placeholder='e.g. +1 234 567 890'
           error={errors.phoneNumber}
         />
-        <button className='stepOneButton' type='submit'>
+        <button className='nextButton' type='submit'>
           Next Step
         </button>
       </form>
