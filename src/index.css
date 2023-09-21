@@ -18,3 +18,9 @@ body {
   background-color:hsl(217, 100%, 97%);
 }
 
+@media screen and (max-width: 60rem) {
+  body{
+    display: block;
+  }
+}
+

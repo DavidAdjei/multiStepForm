@@ -16,42 +16,44 @@ function calculateTotalAddOnsPrice(addOns) {
 
   return (
     <div className='step4'>
-      <div className='stepFourSection'>
-        <div className='info'>
-          <h1 className='heading'>Finishing Up</h1>
-          <p className='instructions'>Double-check everything looks OK before confirming</p>
-        </div>
-        <div className='monthlyConfirmation'>
-          <div className='summary'>
-            <div className='planSummary'>
-              <div className='planSummaryLeft'>
-                <p className='planName'>
-                  {selected.name} ({selected.type})
-                </p>
-                <Link to={'/step2'} className='toStepTwo' onClick={()=>setSelectedAddOns([])}>
-                  Change
-                </Link>
-              </div>
-              <div className='planSummaryRight'>{selected.price}</div>
-            </div>
-            <hr />
-            <div className='addOnsSummary'>
-              {selectedAddOns.length > 0 ? (
-                <ul>
-                  {selectedAddOns.map((addOn, index) => (
-                    <li key={index}>
-                      {addOn.name} <span>{addOn.price}</span>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p>No add-ons selected</p>
-              )}
-            </div>
+      <div className="mobileSomething">
+          <div className='stepFourSection'>
+          <div className='info'>
+            <h1 className='heading'>Finishing Up</h1>
+            <p className='instructions'>Double-check everything looks OK before confirming</p>
           </div>
-          <div className='calculateTotal'>
-            <p>Total (per {showYearlyPlans ? 'year' : 'month'}):</p>
-            <span>${grandTotal}/{showYearlyPlans ? 'yr' : 'mo'}</span>
+          <div className='monthlyConfirmation'>
+            <div className='summary'>
+              <div className='planSummary'>
+                <div className='planSummaryLeft'>
+                  <p className='planName'>
+                    {selected.name} ({selected.type})
+                  </p>
+                  <Link to={'/step2'} className='toStepTwo' onClick={()=>setSelectedAddOns([])}>
+                    Change
+                  </Link>
+                </div>
+                <div className='planSummaryRight'>{selected.price}</div>
+              </div>
+              <hr />
+              <div className='addOnsSummary'>
+                {selectedAddOns.length > 0 ? (
+                  <ul>
+                    {selectedAddOns.map((addOn, index) => (
+                      <li key={index}>
+                        {addOn.name} <span>{addOn.price}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p>No add-ons selected</p>
+                )}
+              </div>
+            </div>
+            <div className='calculateTotal'>
+              <p>Total (per {showYearlyPlans ? 'year' : 'month'}):</p>
+              <span>${grandTotal}/{showYearlyPlans ? 'yr' : 'mo'}</span>
+            </div>
           </div>
         </div>
       </div>

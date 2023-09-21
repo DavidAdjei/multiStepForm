@@ -6,7 +6,8 @@ export default class Step3 extends Component {
   render() {
     return (
         <div className='stepThree'>
-            <div className='stepThreeSection'>
+            <div className='mobileSomething'>
+                <div className='stepThreeSection'>
                 <div className='info'>
                     <h1 className="heading">Pick add-ons</h1>
                     <p className="instructions">Add-ons help enhance your gaming experience.</p>
@@ -57,6 +58,7 @@ export default class Step3 extends Component {
                         handleCheckboxChange={this.props.handleCheckboxChange}
                     />
                 </div>
+                </div> 
             </div>
             <div className='buttonsColumn'>
                 <Link to='/step2' className='goBackButton' onClick={()=>this.props.setActiveStep(2)}>

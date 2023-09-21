@@ -27,47 +27,51 @@ export default function StepOne({ formData, setFormData, validateForm, setActive
 
   return (
     <div className='stepOne'>
-      <div className='info'>
+      <div className='mobileSomething'>
+        <div className='info'>
         <h1 className='heading'>Personal info</h1>
         <p className='instructions'>
           Please provide your name, email address, and phone number.
         </p>
+        </div>
+        <form className='stepOneForm' onSubmit={handleSubmit}>
+          <FormField
+            label='Name'
+            id='name'
+            name='displayName'
+            type='text'
+            value={displayName}
+            onChange={handleInputChange}
+            placeholder='e.g. Stephen King'
+            error={errors.displayName}
+          />
+          <FormField
+            label='Email'
+            id='email'
+            name='email'
+            type='text'
+            value={email}
+            onChange={handleInputChange}
+            placeholder='e.g. stephenking@lorem.com'
+            error={errors.email}
+          />
+          <FormField
+            label='Phone Number'
+            id='phoneNumber'
+            name='phoneNumber'
+            type='number'
+            value={phoneNumber}
+            onChange={handleInputChange}
+            placeholder='e.g. +1 234 567 890'
+            error={errors.phoneNumber}
+          />        
+        </form>
       </div>
-      <form className='stepOneForm' onSubmit={handleSubmit}>
-        <FormField
-          label='Name'
-          id='name'
-          name='displayName'
-          type='text'
-          value={displayName}
-          onChange={handleInputChange}
-          placeholder='e.g. Stephen King'
-          error={errors.displayName}
-        />
-        <FormField
-          label='Email'
-          id='email'
-          name='email'
-          type='text'
-          value={email}
-          onChange={handleInputChange}
-          placeholder='e.g. stephenking@lorem.com'
-          error={errors.email}
-        />
-        <FormField
-          label='Phone Number'
-          id='phoneNumber'
-          name='phoneNumber'
-          type='number'
-          value={phoneNumber}
-          onChange={handleInputChange}
-          placeholder='e.g. +1 234 567 890'
-          error={errors.phoneNumber}
-        />
-        <button className='nextButton1' type='submit'>
-          Next Step
-        </button>
-      </form>
+      <div className='buttonsColumn'>
+          <button className='nextButton1' type='submit' onClick={handleSubmit}>
+            Next Step
+          </button>
+      </div>
     </div>
   );
 }

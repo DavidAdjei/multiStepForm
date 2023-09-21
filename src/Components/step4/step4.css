@@ -87,3 +87,14 @@ hr{
     border: none;
     border-top: 2px solid hsl(229, 24%, 87%);
 }
+
+@media screen and (max-width: 60rem) {
+    .step4{
+        width: 100%;
+        height: 78vh;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        padding-top: 0;
+    }
+}

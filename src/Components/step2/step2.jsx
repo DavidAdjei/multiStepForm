@@ -13,7 +13,8 @@ function Step2({showYearlyPlans, toggleYearlyPlans, handlePlanSelection, selecte
 
     return (
       <div className="stepTwo">
-        <div className='stepTwoSection'>
+        <div className='mobileSomething'>
+          <div className='stepTwoSection'>
           <div className='info'>
             <h1 className='heading'>Select your plan</h1>
             <p className='instructions'>You have the option of monthly or yearly billing</p>
@@ -47,7 +48,7 @@ function Step2({showYearlyPlans, toggleYearlyPlans, handlePlanSelection, selecte
             onClick={() => handlePlanSelection('Arcade', 'Yearly', '$90/yr', 90)}
             image={Arcade}
             name='Arcade'
-            price='$90/mo'
+            price='$90/yr'
             discount='2 months free'
           />
           <YearlyPlan
@@ -55,7 +56,7 @@ function Step2({showYearlyPlans, toggleYearlyPlans, handlePlanSelection, selecte
             onClick={() => handlePlanSelection('Advanced', 'Yearly', '$120/yr', 120)}
             image={Advanced}
             name='Advanced'
-            price='$120/mo'
+            price='$120/yr'
             discount='2 months free'
           />
           <YearlyPlan
@@ -63,7 +64,7 @@ function Step2({showYearlyPlans, toggleYearlyPlans, handlePlanSelection, selecte
             onClick={() => handlePlanSelection('Pro', 'Yearly', '$150/yr', 150)}
             image={Pro}
             name='Pro'
-            price='$150/mo'
+            price='$150/yr'
             discount='2 months free'
           />
         </div>
@@ -75,6 +76,7 @@ function Step2({showYearlyPlans, toggleYearlyPlans, handlePlanSelection, selecte
             </button>
             <span className={showYearlyPlans ? 'bolded' : ''}>Yearly</span>
           </div>
+        </div>
         </div>
         <div className='buttonsColumn'>
           <Link to='/' className='goBackButton' onClick={()=>setActiveStep(1)}>

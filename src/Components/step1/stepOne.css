@@ -79,6 +79,10 @@
     text-decoration: none;
 }
 
+.stepOne .buttonsColumn{
+    justify-content: flex-end;
+}
+
 .nextButton1{
     display: flex;
     width: 7rem;
@@ -101,4 +105,27 @@
 .nextButton:hover,
 .nextButton1:hover{
     background-color: hsl(243, 100%, 62%);
+}
+
+@media screen and (max-width: 60rem) {
+    .stepOne{
+    width:  100%;
+    height: 78vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    gap: 0;
+    }
+
+    .stepOne .mobileSomething{
+        flex-direction: column;
+    }
+
+    .nextButton1{
+        height: 80%;
+        margin-top: 0;
+        align-self: normal;
+        justify-self: normal;
+        margin-top: .5rem;
+    }
 }

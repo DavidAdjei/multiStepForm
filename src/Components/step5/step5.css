@@ -28,3 +28,21 @@
     text-align: center;
     font-size: 1.1rem;
 }
+
+@media screen and (max-width: 60rem) {
+    .step5{
+        display: flex;
+        width:  90%;
+        gap: 2rem;
+        min-height: 58vh;
+        max-height: 70vh;
+        padding-top: 3rem;
+        background-color: white;
+        border-radius: .5rem;
+        position: relative;
+        top: -5rem;
+        padding-inline: 1.5rem;
+        padding-bottom: 1.5rem;
+        
+    }
+}
