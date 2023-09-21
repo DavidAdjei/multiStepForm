@@ -1,7 +1,7 @@
 .stepTwo{
     display: flex;
     flex-direction: column;
-    width: 35rem;
+    width: 33rem;
     gap: 2rem;
     padding-top: 3rem;
 }
@@ -23,14 +23,14 @@
 .monthlyPlans{
     display: flex;
     gap: 1rem;
-    height: 10rem;
+    height: 12rem;
     width: 100%;
 }
 
 .yearlyPlans{
     display: flex;
     gap: 1rem;
-    height: 10rem;
+    height: 12rem;
     width: 100%;
 }
 
@@ -41,11 +41,23 @@
     border: 1px solid hsl(229, 24%, 87%);
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    padding-block: .7rem;
+    padding-inline: 1rem;
+    justify-content: space-between;
+}
+
+.planDetails:hover{
+    border: 1px solid hsl(243, 100%, 62%);
+}
+
+.selected{
+    border: 1px solid hsl(243, 100%, 62%);
 }
 
 .planImage{
-    height: 3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
     border-radius: 50%;
 }
 
@@ -58,6 +70,21 @@
 .planDesc{
     display: flex;
     flex-direction: column;
+    gap: .3rem;
+}
+
+.planName{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.planPrice{
+    color: hsl(229, 24%, 87%);
+}
+
+.planDiscount{
+    font-weight: 500;
+    font-size: .8rem;
 }
 
 .planToggle{
@@ -73,7 +100,7 @@
 
 .clickToToggle{
     width: 2.2rem;
-    height: 1.2rem;
+    height: 1.1rem;
     background-color: hsl(213, 96%, 18%);
     border-radius: .5rem;
     cursor: pointer;
@@ -86,6 +113,8 @@
     height: 100%;
     background-color: white;
     border-radius: 50%;
+    position: relative;
+    left: 1px;
 }
 
 .circleRight{
@@ -93,7 +122,7 @@
     width: 40%;
     height: 100%;
     position: relative;
-    left: 20px;
+    left: 17px;
     background-color: white;
     border-radius: 50%;
 }
@@ -127,4 +156,8 @@
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
+}
+
+.goBackButton:hover{
+    color: hsl(213, 96%, 18%);
 }

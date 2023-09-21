@@ -1,19 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './step3.css';
+import { useState } from 'react';
 
-function AddOns({ service, description, additionalPrice }) {
+function AddOns({ service, description, additionalPrice, priceNo,  handleCheckboxChange }) {
   const [isChecked, setIsChecked] = useState(false);
 
-  const handleCheckboxChange = () => {
+  const handleCheckbox = () => {
     setIsChecked(!isChecked);
   };
-
   const addOnsClasses = isChecked ? 'addOns active' : 'addOns';
 
   return (
     <div className={addOnsClasses}>
       <div className='addOnsLeft'>
-        <input type="checkbox" onChange={handleCheckboxChange} checked={isChecked} />
+        <input
+          type="checkbox"
+          onClick={handleCheckbox}
+          onChange={() => handleCheckboxChange(service, additionalPrice, priceNo)}
+          checked={isChecked}
+        />
         <div className='addOnsDesc'>
           <span className='service'>{service}</span>
           <span>{description}</span>
@@ -25,4 +30,5 @@ function AddOns({ service, description, additionalPrice }) {
     </div>
   );
 }
+
 export default AddOns;

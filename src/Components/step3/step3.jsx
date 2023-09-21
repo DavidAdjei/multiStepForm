@@ -16,44 +16,55 @@ export default class Step3 extends Component {
                         service="Online Service"
                         description="Access to multiplayer games"
                         additionalPrice="+$1/mo"
+                        priceNo= {1}
+                        handleCheckboxChange={this.props.handleCheckboxChange}
                     />
                     <AddOns
                         service="Larger storage"
                         description="Extra 1TB of cloud storage"
                         additionalPrice="+$2/mo"
+                        priceNo= {2}
+                        handleCheckboxChange={this.props.handleCheckboxChange}
                     />
                     <AddOns
                         service="Customizable profile"
                         description="Custom theme on your profile"
                         additionalPrice="+$2/mo"
+                        priceNo= {2}
+                        handleCheckboxChange={this.props.handleCheckboxChange}
                     />
                 </div>
                 <div className={`${this.props.showYearlyPlans ? 'yearlyAddOns' : 'hide'}`}>
                     <AddOns
                         service="Online Service"
                         description="Access to multiplayer games"
-                        additionalPrice="+$10/mo"
+                        additionalPrice="+$10/yr"
+                        priceNo= {10}
+                        handleCheckboxChange={this.props.handleCheckboxChange}
                     />
                     <AddOns
                         service="Larger storage"
                         description="Extra 1TB of cloud storage"
-                        additionalPrice="+$20/mo"
+                        additionalPrice="+$20/yr"
+                        priceNo= {20}
+                        handleCheckboxChange={this.props.handleCheckboxChange}
                     />
                     <AddOns
                         service="Customizable profile"
                         description="Custom theme on your profile"
-                        additionalPrice="+$20/mo"
+                        additionalPrice="+$20/yr"
+                        priceNo= {20}
+                        handleCheckboxChange={this.props.handleCheckboxChange}
                     />
                 </div>
-
             </div>
             <div className='buttonsColumn'>
-                <Link to='/step2' className='goBackButton'>
+                <Link to='/step2' className='goBackButton' onClick={()=>this.props.setActiveStep(2)}>
                     Go Back
                 </Link>
-                <Link to='/step4' className='nextButton'>
+                <Link to='/step4' className='nextButton' onClick={()=>this.props.setActiveStep(4)}>
                     Next Step
-                </Link>``
+                </Link>
             </div>
       </div>
     )

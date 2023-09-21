@@ -1,7 +1,7 @@
 .stepOne{
     display: flex;
     flex-direction: column;
-    width: 35rem;
+    width: 33rem;
     gap: 2rem;
     padding-top: 3rem;
 }
@@ -75,6 +75,20 @@
     border-radius: .3rem;
     background-color: hsl(213, 96%, 18%);
     color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nextButton1{
+    display: flex;
+    width: 7rem;
+    padding: .8rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: .3rem;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
     align-self: flex-end;
     justify-self: flex-end;
     margin-top: 5rem;
@@ -82,6 +96,9 @@
     text-decoration: none;
 }
 
-.stepOneButton:focus{
+
+
+.nextButton:hover,
+.nextButton1:hover{
     background-color: hsl(243, 100%, 62%);
 }

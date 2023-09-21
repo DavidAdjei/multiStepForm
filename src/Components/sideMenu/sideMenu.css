@@ -3,9 +3,8 @@
     flex-direction: column;
     padding: 2rem;
     padding-top: 3rem;
-    width: 24rem;
+    width: 22rem;
     background-image: url(../../../public/assets/images/bg-sidebar-desktop.svg);
-    /* height: 100%; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0dvb;
@@ -46,4 +45,9 @@
 .stepName span{
     font-weight: 400;
     color: hsl(231, 11%, 63%);
+}
+
+.isActive{
+    color: hsl(213, 96%, 18%);
+    background-color: hsl(228, 100%, 84%);
 }

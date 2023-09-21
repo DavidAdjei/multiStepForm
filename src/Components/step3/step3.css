@@ -1,7 +1,7 @@
 .stepThree{
     display: flex;
     flex-direction: column;
-    width: 35rem;
+    width: 33rem;
     gap: 2rem;
     padding-top: 3rem;
 }

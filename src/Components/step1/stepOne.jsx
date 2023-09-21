@@ -3,41 +3,15 @@ import './stepOne.css';
 import FormField from './formField';
 import { useNavigate } from 'react-router';
 
-export default function StepOne({ formData, setFormData }) {
+export default function StepOne({ formData, setFormData, validateForm, setActiveStep }) {
   const navigate = useNavigate();
-
-const validateForm = () => {
-    const { displayName, email, phoneNumber } = formData;
-    let errors = {};
-    let isValid = true;
-
-    if (!displayName) {
-      errors.displayName = 'This field is required';
-      isValid = false;
-    }
-
-    if (!email) {
-      errors.email = 'This field is required';
-      isValid = false;
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      errors.email = 'Invalid email format';
-      isValid = false;
-    }
-
-    if (!phoneNumber) {
-      errors.phoneNumber = 'This field is required';
-      isValid = false;
-    }
-
-    setFormData({ ...formData, errors });
-    return isValid;
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (validateForm()) {
       navigate('/step2');
+      setActiveStep(2);
     }
   };
 
@@ -90,7 +64,7 @@ const validateForm = () => {
           placeholder='e.g. +1 234 567 890'
           error={errors.phoneNumber}
         />
-        <button className='nextButton' type='submit'>
+        <button className='nextButton1' type='submit'>
           Next Step
         </button>
       </form>

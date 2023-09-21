@@ -1,0 +1,30 @@
+.step5{
+    width: 33rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image5{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.image5 img{
+    width: 100%;
+    height: 100%;
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message .instructions{
+    text-align: center;
+    font-size: 1.1rem;
+}
