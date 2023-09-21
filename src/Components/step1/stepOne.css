@@ -129,3 +129,23 @@
         margin-top: .5rem;
     }
 }
+
+@media screen and (max-width: 30rem) {
+    .heading{
+        font-size: 1.6rem;
+    }
+
+    .instructions{
+        font-size: 1rem;
+    }
+
+    .inputField{
+    height: 2rem;
+}
+    .formFields label{
+    font-size: .9rem;
+}
+    .mobileSomething{
+        top: -5rem;
+    }
+}

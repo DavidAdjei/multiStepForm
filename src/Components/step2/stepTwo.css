@@ -207,8 +207,8 @@
     }
 
     .planImage{
-        width: 2rem;
-        height: 2rem;
+        width: 2.2rem;
+        height: 2.2rem;
     }
 
     .buttonsColumn{
@@ -218,3 +218,27 @@
     }
 }
 
+@media screen and (max-width: 30rem) {
+    .mobileSomething{
+        top: -5rem;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .planDetails{
+        align-items: flex-start;
+        padding-block: .4rem;
+    }
+
+    .planName{
+        font-size: 1rem;
+    }
+
+    .planPrice{
+        font-size: .8rem;
+    }
+
+    .planDiscount{
+        font-size: .7rem;
+    }
+}
