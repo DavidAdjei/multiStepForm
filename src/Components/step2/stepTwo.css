@@ -55,6 +55,7 @@
 
 .selected{
     border: 1px solid hsl(243, 100%, 62%);
+    background-color: hsl(217, 100%, 97%);
 }
 
 .planImage{
@@ -220,24 +221,28 @@
 @media screen and (max-width: 30rem) {
     .mobileSomething{
         top: -5rem;
-        gap: 1rem;
+        gap: .7rem;
         padding-top: 1rem;
     }
 
     .planDetails{
         align-items: flex-start;
-        padding-block: .4rem;
+        padding-block: .2rem;
     }
 
     .planName{
-        font-size: 1rem;
+        font-size: .9rem;
     }
 
     .planPrice{
-        font-size: .8rem;
+        font-size: .7rem;
     }
 
     .planDiscount{
-        font-size: .7rem;
+        font-size: .6rem;
+    }
+
+    .goBackButton{
+        font-size: .8rem;
     }
 }

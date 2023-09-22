@@ -81,4 +81,25 @@
         gap: 0;
         padding-top: 0;
     }
-}    
+}
+
+@media screen and (max-width: 30rem) {
+  .addOns {
+    height: 4rem;
+  }
+
+  .service {
+    font-size: .9rem;
+  }
+
+  .addOnsDesc:last-child {
+    font-size: .7rem;
+  }
+
+  .price {
+    font-size: .7rem;
+  }
+
+}
+
+

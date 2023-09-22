@@ -11,7 +11,7 @@
     flex-direction: column;
     gap: 2rem;
     width: 100%;
-    height: 80%;
+    min-height: 80%;
 }
 
 .monthlyConfirmation,
@@ -96,5 +96,15 @@ hr{
         align-items: center;
         gap: 0;
         padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 30rem) {
+    .addOnsSummary li{
+        font-size: .7rem;
+    }
+
+    .calculateTotal span{
+        font-size: 1.2rem
     }
 }

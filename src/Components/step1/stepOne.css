@@ -140,22 +140,26 @@
     padding-top: 0;
     gap: 0;
     }
-    
+
     .heading{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .instructions{
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .inputField{
     height: 2rem;
 }
     .formFields label{
-    font-size: .9rem;
+    font-size: .7rem;
 }
     .mobileSomething{
         top: -5rem;
+    }
+
+    .nextButton{
+        font-size: .8rem;
     }
 }

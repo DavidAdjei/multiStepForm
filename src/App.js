@@ -30,6 +30,14 @@ function App() {
   const [activeStep, setActiveStep] = useState(1)
 
   const [selectedAddOns, setSelectedAddOns] = useState([]); 
+
+   const toggleYearlyPlans = () => {
+     setShowYearlyPlans((prevState) => !prevState);
+     showYearlyPlans ? setSelected({ name: 'Arcade', type: 'Month', price: '$9/mo', priceNo: 9 }) :
+       setSelected({ name: 'Arcade', type: 'Yearly', price: '$90/yr', priceNo: 90 })
+       
+   };
+  
   const validateForm = () => {
     const { displayName, email, phoneNumber } = formData;
     let errors = {};
@@ -77,10 +85,6 @@ function App() {
     setSelectedAddOns(updatedSelectedAddOns);
   }
 };
-
-  const toggleYearlyPlans = () => {
-    setShowYearlyPlans((prevState) => !prevState);
-  };
 
   return (
     <section className="App">
