@@ -24,3 +24,8 @@ body {
   }
 }
 
+@media screen and (max-height: 39rem) {
+  body{
+    height: unset;
+  }
+}
